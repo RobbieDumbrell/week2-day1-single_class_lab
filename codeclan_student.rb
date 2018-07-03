@@ -7,7 +7,7 @@ class Student
     @cohort = cohort
   end
 
-# name getter method.
+# name getter method. (could have done attr_reader)
   def name
     return @name
   end
@@ -17,7 +17,7 @@ class Student
     return @cohort
   end
 
-# name setter method taking a new name as a string.
+# name setter method taking a new name as a string. (could have done attr_writer - or attr_accessor for getters and setters).
   def set_name(new_name)
     @name = new_name
   end

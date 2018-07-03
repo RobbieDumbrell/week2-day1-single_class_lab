@@ -28,13 +28,13 @@ class Team
     for player in @players
       return true if player_to_check == player
     end
-    return false
+    return false   # could have used .include? method
   end
 
 # method to increase the points variable by 3 for a win, or not get any points for a loss (takes a string "W" or "L").
   def result(outcome)
     @points += 3 if outcome == "W"
-    @points += 0 if outcome == "L"
+    @points += 0 if outcome == "L" # not really necessary...
   end
 
 end

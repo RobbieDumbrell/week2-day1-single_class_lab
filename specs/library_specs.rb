@@ -29,6 +29,8 @@ class TestLibrary < MiniTest::Test
         }
       }
     ]
+
+    # could put new instance of Library in here rather than in each test...
   end
 
 
